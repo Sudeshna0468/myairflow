@@ -12,14 +12,18 @@ with DAG(
 ):
     EmptyOperator(task_id="tarefa")
 
-cnx = mysql.connector.connect(user='root', password='sgCzYueZ3nXRAaG',
-                              host='host.docker.internal',
-                              database='mariadbproject')
+def updtbproducts():
+    cnx = mysql.connector.connect(user='root', password='sgCzYueZ3nXRAaG',
+                                host='host.docker.internal',
+                                database='mariadbproject')
 
-cursor = cnx.cursor()
-query = ("update mariadbproject.tbproducts set active=1 where code=1;")
-cursor.execute(query)
+    cursor = cnx.cursor()
+    query = ("update mariadbproject.tbproducts set active=1 where code=1;")
+    cursor.execute(query)
 
-cursor.close()
-cnx.commit()
-cnx.close()
+    cursor.close()
+    cnx.commit()
+    cnx.close()
+
+updtbproducts();
+
