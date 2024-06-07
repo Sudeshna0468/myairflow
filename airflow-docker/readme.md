@@ -1,13 +1,14 @@
-# instalar docker
-# criar pasta vazia myairflow
-# criar pasta airflow-docker  
-mkdir airflow-docker
+1. instalar docker
+2. criar pasta vazia myairflow
+3. criar pasta airflow-docker  
+    - mkdir airflow-docker
 
-# create docker-compose from https://airflow.apache.org/docs/apache-airflow/stable/docker-compose.yaml
-mkdir dags 
-mkdir logs 
-mkdir plugins
+4. create docker-compose from https://airflow.apache.org/docs/apache-airflow/stable/docker-compose.yaml
+    - mkdir dags 
+    - mkdir logs 
+    - mkdir plugins
 
-docker-compose up airflow-init
-docker-compose up
+5. starting airflow
+    - docker-compose up airflow-init
+    - docker-compose up
 
