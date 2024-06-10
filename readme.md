@@ -9,6 +9,7 @@
     - mkdir plugins
 
 5. starting airflow
+    - cd airflow-docker
     - docker-compose up airflow-init
     - docker-compose up
 
