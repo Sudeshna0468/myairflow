@@ -1,3 +1,4 @@
 airflow-docker/logs/scheduler/2024-06-07/*.py.log
 airflow-docker/logs/dag_processor_manager/*.log
 airflow-docker/dags/__pycache__/*.*
+*.log
